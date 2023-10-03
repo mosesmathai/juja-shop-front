@@ -149,6 +149,10 @@ export const StyledTitle = styled.h1`
   color: #4B0082;
 `;
 
+export const StyledWarning = styled.div`
+  color: red;
+`
+
 export default function CartPage() {
   const {cartProducts,addProduct,removeProduct,clearCart} = useContext(CartContext);
   const [products, setProducts] = useState([]);
@@ -370,7 +374,7 @@ export default function CartPage() {
                   <option value="Super Metro Station Nairobi CBD">Super Metro Station, Nairobi CBD</option>
                 </StyledSelect> 
                
-
+                <StyledWarning>Please confirm total bill before paying. Delivery rates vary.</StyledWarning>
                 <PaymentBtn
                   type="submit"
                   disabled={amount && firstName && lastName ? false : true}   
