@@ -374,7 +374,7 @@ export default function CartPage() {
                   <option value="Super Metro Station Nairobi CBD">Super Metro Station, Nairobi CBD</option>
                 </StyledSelect> 
                
-                <StyledWarning>Please confirm total bill before paying. Delivery rates vary.</StyledWarning>
+                <StyledWarning>Please confirm the total bill before paying. Delivery rates vary.</StyledWarning>
                 <PaymentBtn
                   type="submit"
                   disabled={amount && firstName && lastName ? false : true}   
