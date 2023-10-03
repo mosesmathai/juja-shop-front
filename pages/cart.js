@@ -169,7 +169,16 @@ export default function CartPage() {
   
   const form = useRef();
 
-  const router = useRouter()
+  const router = useRouter();
+
+  function handleEmailNotification() {
+    emailjs.sendForm('service_wfb1qby', 'template_x98uq6h', form.current, 'G1vccmuK_P_2nr7Hv')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
 
   const payHandler = (event) => {
     event.preventDefault()
@@ -218,14 +227,7 @@ export default function CartPage() {
     await axios.post('/api/checkout', data);
   }
 
-  function handleEmailNotification() {
-    emailjs.sendForm('service_wfb1qby', 'template_x98uq6h', form.current, 'G1vccmuK_P_2nr7Hv')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
+ 
 
   
   let total = 0;
