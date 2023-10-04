@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Blue Ocean Inc</title>
+        <title>Juja Shop</title>
       </Head>
       <GlobalStyles />
       <CartContextProvider>

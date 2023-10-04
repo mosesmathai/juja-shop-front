@@ -206,7 +206,7 @@ export default function Header() {
             <LogoWrapper>
               <LogoSearchWrapper>
                 <LogoTag>
-                  Juja Shop
+                  Welcome
                 </LogoTag>        
               </LogoSearchWrapper>
             </LogoWrapper>
