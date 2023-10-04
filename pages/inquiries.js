@@ -80,13 +80,13 @@ export default function Inquiries() {
   const [phone, setPhone] = useState('');
   const [goToSuccess, setGoToSuccess] = useState(false);
   const [communication, setCommunication] = useState('');
+  const [buttonText, setButtonText] = useState('Send Message')
   
-    
-
   const form = useRef(); 
 
   async function submitMessage(ev) {
     ev.preventDefault();
+    setButtonText('processing...')
     const data = {
       fullName,phone,communication,message
     };  
@@ -164,7 +164,7 @@ export default function Inquiries() {
                 <PaymentBtn
                   type="submit"           
                 >
-                  Send Message
+                  {buttonText}
                 </PaymentBtn>
               </form>
             </Box>
