@@ -241,10 +241,11 @@ export default function CartPage() {
     } else if (location === 'I will pick it up') {
       total = 0
     } else if (location === 'Within Juja') {
-      total = 0
+      total = 30
+      deliveryFee = 30
     } else if (location === 'Super Metro Station Nairobi CBD') {
-      total = 100
-      deliveryFee = 100
+      total = 150
+      deliveryFee = 150
     }  
     total += price;  
   }
