@@ -231,23 +231,11 @@ export default function CartPage() {
 
   
   let total = 0;
-  let deliveryFee = 0;
   // https://payment.intasend.com/checkout/2a625a23-5ecb-417c-b4dc-4965dc32366c/0L359EY/status/
 
   for (const productId of cartProducts) {
     const price = products.find(p => p._id === productId)?.price || 0;
-    if (location === ''){
-      total = 0
-    } else if (location === 'I will pick it up') {
-      total = 0
-    } else if (location === 'Within Juja') {
-      total = 30
-      deliveryFee = 30
-    } else if (location === 'Super Metro Station Nairobi CBD') {
-      total = 150
-      deliveryFee = 150
-    }  
-    total += price;  
+    total += price
   }
 
   useEffect(() => {
@@ -308,9 +296,7 @@ export default function CartPage() {
                         </tr>
                       ))}
                       <tr>
-                        <td></td>
-                        <TotalWrapper>Delivery Fee</TotalWrapper>
-                        <PriceWrapper>Ksh {deliveryFee}</PriceWrapper>
+                        
                       </tr> 
                       <tr>
                         <td></td>
@@ -377,7 +363,7 @@ export default function CartPage() {
                   <option value="Super Metro Station Nairobi CBD">Super Metro Station, Nairobi CBD</option>
                 </StyledSelect> 
                
-                <StyledWarning>Please confirm the total bill before paying. Delivery rates vary.</StyledWarning>
+  
                 <PaymentBtn
                   type="submit"
                   disabled={amount && firstName && lastName ? false : true}   
