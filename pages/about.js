@@ -49,7 +49,7 @@ export default function AboutPage() {
           <AboutTitle>Contacts</AboutTitle>
           <div>0748-339-375</div>
           <AboutTitle>Location</AboutTitle>
-          <div>Greenfields, Juja</div>
+          <div>Greenfields, Juja, Kenya</div>
           <div>Opposite Carnation House</div>
           <AboutTitle>Social Media Accounts</AboutTitle>
           <SocialsWrapper>
