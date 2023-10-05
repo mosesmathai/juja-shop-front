@@ -47,7 +47,7 @@ export default function AboutPage() {
       <AboutWrapper>
         <Center> 
           <AboutTitle>Contacts</AboutTitle>
-          <div>0748-339-375</div>
+          <div>0748-33-93-75</div>
           <AboutTitle>Location</AboutTitle>
           <div>Greenfields, Juja, Kenya</div>
           <div>Opposite Carnation House</div>
