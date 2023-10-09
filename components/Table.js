@@ -6,14 +6,14 @@ const StyledTable = styled.table`
   border-collapse: collapse;
 
   thead {
-    background: #4B0082;
+    background-color: black;
     text-align: left;
     text-transform: uppercase;
     color: white; 
   }
   td {
     border: 1px solid #ccc;
-    color: #4B0082;
+    color: black;
     padding: 10px 0 10px 10px;
   }
 

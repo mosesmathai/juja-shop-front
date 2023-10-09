@@ -9,7 +9,7 @@ import { Featured } from "@/models/Featured";
 
 
 const ProductWrapper = styled.div`
-  background: linear-gradient(to bottom right, #4B0082, #54038f, #7c0acf);
+  background-color: black;
 `;
 
 export default function HomePage({featuredProduct,newProducts}) {

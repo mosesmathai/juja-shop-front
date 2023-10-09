@@ -39,7 +39,6 @@ export const AboutTitle = styled.h1`
 `;
 
 
-
 export default function AboutPage() {
   return (
     <>

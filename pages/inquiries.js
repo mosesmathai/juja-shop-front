@@ -54,10 +54,7 @@ export const MessageWrapper = styled.div`
   
   font-family: Verdana;
   font-size: medium;
-  background: linear-gradient(to bottom right, #4B0082, #54038f, #7c0acf);
-  &:hover {
-    background: linear-gradient(to bottom, #4B0082, #54038f, #7c0acf);
-  }
+  background-color: black;
   color: white;
   padding: 20px 10px;
 `;

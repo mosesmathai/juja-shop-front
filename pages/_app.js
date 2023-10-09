@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 const GlobalStyles = createGlobalStyle`
   body{
-    background: #4B0082;
+    background-color: black;
     margin: 0;
     padding: 0;
   }

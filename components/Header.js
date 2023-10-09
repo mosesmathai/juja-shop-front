@@ -9,10 +9,7 @@ import BarIcon from "./icons/BarIcon";
 
 
 const StyledHeader = styled.header`
-  background: linear-gradient(to bottom right, #4B0082, #54038f, #7c0acf);
-  &:hover {
-    background: linear-gradient(to bottom, #4B0082, #54038f, #7c0acf);
-  }
+  background-color: black;
   border-style: solid;
   border-width: 0 0 1px 0;
   border-color: gray;

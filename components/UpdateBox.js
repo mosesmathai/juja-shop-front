@@ -1,3 +1,4 @@
+
 import styled from "styled-components"
 
 const StyledHeader = styled.h1`
@@ -12,10 +13,13 @@ const StyledText = styled.p`
   margin: 0;
 `;
 
+
+
 export default function UpdateBox({title,message}) {
   return (
     <div>    
       <StyledHeader>{title}</StyledHeader>
+      {/* <StyledText>{(new Date(message.createdAt)).toLocaleString()}</StyledText> */}
       <StyledText>{message}</StyledText>     
     </div>
   )

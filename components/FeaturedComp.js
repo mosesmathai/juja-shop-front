@@ -7,7 +7,7 @@ import { CartContext } from "./CartContext";
 import FlyingButton from 'react-flying-item'
 
 const Bg = styled.div`
-  background: linear-gradient(to top, #4B0082, #54038f, #7c0acf);
+  background-color: black;
   color: white;
   padding: 5px 0 0 0;
   @media screen and (min-width: 768px) {
@@ -74,7 +74,7 @@ const ButtonsWrapper = styled.div`
 
 const FlyingWrapperFeatured = styled.div`
   button {
-    background: linear-gradient(to bottom right, #FCE8F3, white, #4B0082);
+    background-color: white;
     border: 3px solid #FCE8F3;
     padding: 5px 10px;
     border-radius: 5px;
@@ -86,10 +86,10 @@ const FlyingWrapperFeatured = styled.div`
       margin-right: 5px;
     }
     &:hover {
-      background: linear-gradient(to bottom, #FCE8F3, white, #4B0082);
+      background-color: #EDEADE;
     }
     &:active {
-      background: linear-gradient(to bottom right, #FCE8F3, white, #4B0082);
+      background-color: white;
     }
   }
 `;

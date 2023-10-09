@@ -38,10 +38,11 @@ export const Box = styled.div`
 `;
 
 export const PaymentBtn = styled.button`
-  background: linear-gradient(to bottom right, #4B0082, #54038f, #7c0acf);
+  background-color: green;
   &:hover {
-    background: linear-gradient(to bottom, #4B0082, #54038f, #7c0acf);
+    background-color: #50C878;
   }
+  font-weight: bold;
   border: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -82,11 +83,12 @@ const CartTitleWrapper = styled.h2`
   justify-content: center;
   align-items: center;
   margin: 0 0 10px 0;
-  color: #4B0082;
+  color: black;
 `;
 
 const PriceWrapper = styled.td`
   font-weight: bold;
+  
 `;
 
 const TotalWrapper = styled.td`
@@ -112,16 +114,6 @@ const QuantityLabel = styled.span`
 
 export const Bg = styled.div`
   padding: 0 0 20px 0;
-`;
-
-const ReturnHomeBtn = styled(Link)`
-  background-color: #4B0082;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 5px 8px;
-  text-decoration: none;
-  color: white;
 `;
 
 export const StyledPHolder = styled.p`

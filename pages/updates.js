@@ -7,7 +7,7 @@ import { Update } from "@/models/Update";
 
 
 const ProductWrapper = styled.div`
-  background: linear-gradient(to bottom right, #4B0082, #54038f, #7c0acf);
+  background-color: black;
 `;
 
 export default function Updates({newUpdates}) {

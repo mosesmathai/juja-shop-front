@@ -59,7 +59,7 @@ const PriceRow = styled.div`
 
 export const FlyingButtonWrapper = styled.div`
   button {
-    background: linear-gradient(to bottom right, #4B0082, #54038f, #BF40BF);
+    background-color: black;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -73,10 +73,10 @@ export const FlyingButtonWrapper = styled.div`
     gap: 5px;
     width: 110px;
     &:hover {
-      background: linear-gradient(to bottom, #4B0082, #54038f, #BF40BF);
+      background-color: #28282B;
     }
     &:active {
-      background: linear-gradient(to bottom right, #4B0082, #54038f, #BF40BF);
+      background-color: black;
     }
   }
 `;
