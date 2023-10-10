@@ -104,8 +104,8 @@ export default function ProductBox({_id,title,description,price,images}) {
             targetTop={'5%'} 
             targetLeft={'95%'}
             flyingItemStyling={{
-              maxWidth: '45px',
-              maxWidth: '45px',
+              maxWidth: '40px',
+              maxWidth: '40px',
               width: 'auto',
               height: 'auto',
             }}
