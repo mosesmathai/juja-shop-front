@@ -61,13 +61,15 @@ export const PriceRow = styled.div`
 export const Price = styled.span`
   font-size: 20px;
   font-family: san-serif;
+  color: black;
+  font-weight: bold;
 `;
 
 const StyledTitle = styled.div`
   font-size: 20px;
   font-weight: bold;
   font-weight: 600;
-  color: #4B0082;
+  color: black;
 `;
 
 const StyledP = styled.p`
