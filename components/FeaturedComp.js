@@ -105,10 +105,15 @@ const CenterImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0 15px 0;
 `;
 
 export const StyledImage = styled.img`
   border-radius: 10px;
+`;
+
+const FeaturedWrapper = styled.div`
+  margin-bottom: 10px;
 `;
 
 export default function FeaturedComp({product}) {
@@ -121,7 +126,7 @@ export default function FeaturedComp({product}) {
       <Center>
         <ColumnsWrapper>
           <Column>
-            <div>
+            <FeaturedWrapper>
               <Title>{product?.title}</Title>
               <Desc>{product?.description}</Desc>
               <ButtonsWrapper>
@@ -143,7 +148,7 @@ export default function FeaturedComp({product}) {
                   </FlyingButton>
                 </FlyingWrapperFeatured>      
               </ButtonsWrapper>    
-            </div>
+            </FeaturedWrapper>
           </Column>
           <ImgColumn>
             <CenterImg>
