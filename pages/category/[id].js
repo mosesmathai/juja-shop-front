@@ -37,7 +37,8 @@ const CatSubHeader = styled.div`
 `;
 
 const Filter = styled.div`
-  background-color: #7c0acf;
+  background-color: black;
+  color: black;
   padding: 5px 8px;
   border-radius: 10px;
   display: flex;
