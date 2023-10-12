@@ -265,7 +265,7 @@ export default function CartPage() {
                       <tr>
                         <th>Product</th>
                         <th>Quantity</th>
-                        <th>Price (Ksh)</th>
+                        <th>Price</th>
                       </tr>
                     </thead>
                     <tbody>
