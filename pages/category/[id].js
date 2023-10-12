@@ -67,6 +67,10 @@ export const CatWrapperSingle = styled.div`
   }
 `;
 
+const StyledFilterTag = styled.div`
+  color: white;
+`;
+
 export default function CategoryPage({category,subCategories,products:originalProducts}) {
   const defaultSorting = '_id-desc';
   const defaultFilterValues = category.properties.map(p => ({name:p.name,value:'all'}))
@@ -130,7 +134,7 @@ export default function CategoryPage({category,subCategories,products:originalPr
               </Filter>
             ))}
             <Filter>
-              <span>Filter:</span>
+              <StyledFilterTag>Filter:</StyledFilterTag>
               <select value={sort} onChange={
                 ev => {setSort(ev.target.value); setFiltersChanged(true);}}
               >
