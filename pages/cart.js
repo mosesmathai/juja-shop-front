@@ -157,7 +157,7 @@ export default function CartPage() {
   const [lastName, setLastName] = useState();
   const [amount, setAmount] = useState();
   const [data, setData] = useState([]);
-  const [buttonText, setButtonText] = useState('Pay');
+  const [buttonText, setButtonText] = useState('Place your Order');
   
   const form = useRef();
 
